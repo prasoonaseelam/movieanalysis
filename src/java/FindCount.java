@@ -18,17 +18,6 @@ public class FindCount {
 	 * @param args
 	 */
 	
-	public static void main2(String args[]) throws IOException {
-		
-		float c = 145;
-		float total = 500;
-				
-	    System.out.println(   " Perc:"+ (   (c ) / total )  );
-
-	    System.out.println(   " Perc:"+ ( c %  total )  );
-
-
-	}
 	public static void main(String args[]) throws IOException {
 		
 	    Set<String> positive = loadDictionary("/Users/Prasoona/R/data/positivewords.txt");
@@ -152,11 +141,6 @@ public class FindCount {
 	    return phrases;
 	}
 	
-	
-	
-	
-	
-	
 	public static int stringContainsItemFromList(String line, Set<String> list)
 	{
 		Object[] items =  list.toArray();
@@ -170,7 +154,5 @@ public class FindCount {
 	        }
 	    }
 	    return count;
-	}
-	
-	
+	}	
 }
